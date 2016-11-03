@@ -1,3 +1,7 @@
 <section>
-  all records and users
+  <?php
+      foreach($data as $list):
+        echo $list['name'];
+      endforeach;
+  ?>
 </section>

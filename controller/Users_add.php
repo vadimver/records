@@ -1,14 +1,14 @@
 <?php
-/**
- * require models
- */
+require '../model/Users_model.php';
 
-require_once '../model/Users.php';
+class Users_add
+{
+    public function add_users()
+    {
+      $gg = new Users_model;
+      return $gg->add_users();
+    }
+}
 
-/**
- * include views
- */
-
-
-
-?>
+$go = new Users_add();
+$go->add_users();

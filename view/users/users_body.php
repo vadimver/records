@@ -2,7 +2,7 @@
   <div class = "users_block">
     <form action="users_add.php" name="userForm" method = "POST" onsubmit="return validateForm()">
       <input type = "email" maxlength = "40" name = "email" placeholder=" e-mail"></br>
-      <input type = "text" maxlength = "60" pattern = '^[a-zA-Z][a-zA-Z-_\.]{1,2}$' name = "name" placeholder=" name"></br>
+      <input type = "text" maxlength = "60" pattern = '^[a-zA-Z][a-zA-Z \.]{1,60}$' name = "name" placeholder=" name"></br>
       <input type = "text" maxlength = "40" name = "nick" placeholder=" Nickname"></br>
       <label for = "male">Male</label>
       <input id = "male" name = "sex" checked="true" value = "Male" type = "radio">

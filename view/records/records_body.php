@@ -1,6 +1,6 @@
 <section>
   <div class = "users_block">
-    <form action="records_add.php" name="recordForm" method = "POST" onsubmit="return validateFormRecords()">
+    <form action="record_add.php" name="recordForm" method = "POST" onsubmit="return validateFormRecords()">
       <select name = "id_user">
         <?php foreach($data as $users):?>
         <option value = "<?php echo $users['id'];?>">

@@ -1,5 +1,5 @@
 <?php
-namespace Database;
+namespace Db;
 
 class Db
 {
@@ -17,6 +17,10 @@ class Db
         return $res;
     }
 
+    /**
+     * return DB array
+     *
+     */
     public function query($sql)
     {
         $sth = $this->database->prepare($sql);

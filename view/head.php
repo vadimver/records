@@ -8,4 +8,5 @@
 <script src="/assets/js/main.js"></script>
 </head>
 <body>
+<!-- Start container -->
 <div class = "container">

@@ -5,8 +5,11 @@ namespace Database;
 require '../db/Db.php';
 
 $db = new Db();
-//$result = $db->execute('CREATE TABLE foo (id SERIAL)');
-$data = $db->query('SELECT * FROM users');
 
+$data = $db->query('SELECT name_record,record,nickname,sex FROM records
+LEFT JOIN users
+ON records.id_user = users.id
+');
 
+$users = $db->query('SELECT name,nickname,sex FROM users');
 ?>

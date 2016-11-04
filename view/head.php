@@ -8,3 +8,4 @@
 <script src="/assets/js/main.js"></script>
 </head>
 <body>
+<div class = "container">

@@ -1,8 +1,156 @@
-.navbar {
-margin: 0;
-padding: 0;
-list-style-type: none;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Graduate");
+
+/* Navbar */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
-.navbar li {
-display: inline;
+
+h1 a{
+  font-family: 'Abril Fatface', cursive;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 40px;
+  top: 20px;
+}
+nav{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0.1%;
+  right: 0.1%;
+  width: 1170px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.1);
+}
+nav ul{
+  list-style: none;
+  position: relative;
+  float: right;
+  margin-right: 100px;
+  display: inline;
+  }
+nav ul li{
+  float: left;
+  transition: all .2s ease-in-out;
+}
+
+nav ul li:hover{
+  background: rgba(0,0,0,.15);
+}
+
+nav ul li a{
+  display: block;
+  padding: 30px 20px;
+  color: #222;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* section */
+
+section{
+  margin-top: 100px;
+  width: 1170px;
+  background: #eee;
+  box-sizing: border-box;
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.users_block{
+  text-align: center;
+}
+
+label{
+  cursor: pointer;
+}
+
+input[type='text'],input[type='email'],input[type=''] {
+  width: 250px;
+  height: 30px;
+  border-radius: 1%;
+
+}
+
+textarea{
+  width: 250px;
+  height: 100px;
+  margin-top: 10px;
+}
+input{
+  margin-top: 10px;
+}
+
+button{
+  width: 80px;
+  height: 40px;
+  background: #2AB27B;
+  border: 1px solid rgba(0,0,0,.1);
+  margin-top: 30px;
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+}
+
+button:hover{
+  background: #028A53;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 10px;
+}
+
+img{
+  width: 40px;
+}
+
+.span_name_record{
+  margin-left: 100px;
+}
+
+.all_info{
+  margin-top: 30px;
+  margin: 10px 5px 20px 585px;
+  padding-top: 20px;
+}
+
+.all_users {
+ float: left;
+ width: 585px;
+ padding-left: 20px;
+}
+
+hr{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.users_right_block{
+  padding-top: 20px;
+}
+/* footer */
+
+html,
+body,
+.container {
+  height: 100%;
+}
+
+footer {
+  width: 1170px;
+  margin: 0 auto;
+  height: 80px;
+  color: #333;
+  clear: both;
+  background: #ddd;
+}
+
+footer p {
+  padding-top: 25px;
+  text-align: center;
 }

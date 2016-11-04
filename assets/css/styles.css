@@ -133,6 +133,8 @@ hr{
 .users_right_block{
   padding-top: 20px;
 }
+
+
 /* footer */
 
 html,
@@ -153,4 +155,31 @@ footer {
 footer p {
   padding-top: 25px;
   text-align: center;
+}
+
+/* media */
+@media screen and (max-width: 450px) {
+    footer, section, nav{
+      width: 100%;
+    }
+
+    section{
+      margin-top: 350px;
+    }
+    h1{
+      margin-bottom: 70px;
+    }
+
+    .all_info{
+      padding-top: 20px;
+      margin-left: 20px;
+      width: 100%;
+    }
+
+    .all_users {
+     padding-left: 20px;
+     margin-bottom: 50px;
+     width: 100%;
+    }
+
 }
